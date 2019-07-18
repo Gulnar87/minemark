@@ -1,0 +1,150 @@
+.advisors-title {
+	font-size: 32px;
+	font-weight: bold;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+
+.advisors-row {
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+
+.card {
+	margin-bottom: 40px;
+	background-color: #ffff;
+}
+
+.advisor-name {
+	font-size: 21px;
+	color: #df0113;
+}
+
+.advisor-profession {
+	font-size: 16px;
+}
+
+.more-info {
+	font-size: 16px;
+	color: inherit;
+}
+
+.more-info:link, .more-info:visited{
+   text-decoration: none;
+  /* color:  #ff3547;*/
+ }
+
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.subtitle-row, .advisors-row  {
+	width: 85%;
+}
+
+/*.advisor-name {
+	font-size: 22px;
+
+}*/
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.subtitle-row, .advisors-row  {
+	width: 85%;
+}
+
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+.advisors-row, .subtitle-row {
+	width: 80%;
+}
+
+.advisors-title {
+	font-size: 28px;
+}
+
+
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+.subtitle-row, .advisors-row  {
+	width: 80%;
+}
+
+.advisors-title {
+	font-size: 28px;
+}
+
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+.subtitle-row, .advisors-row  {
+	width: 85%;
+}
+
+
+.advisors-title {
+	font-size: 24px;
+}
+
+/*.advisor-name {
+	font-size: 21px;
+	
+}*/
+
+/*.advisor-profession {
+	font-size: 18px;
+}*/
+
+
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+.subtitle-row, .advisors-row{
+	width: 85%;
+}
+
+
+.advisors-title {
+	font-size: 21px;
+}
+
+.advisor-name {
+	font-size: 19px;
+	
+}
+
+
+
+}

@@ -1,0 +1,337 @@
+.home-row-color {
+	background-color: #f9f9f9;
+  padding-bottom: 50px;
+  padding-top: 80px;
+}
+
+
+.mission-home, .work-home {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-color: #f9f9f9;
+}
+
+.home-row {
+  margin: 0 auto; 
+  width: 75%;
+}
+
+.home-title {
+  font-size: 24px;
+}
+
+.home-content {
+  font-size: 21px;
+}
+
+.hom-col {
+  display: flex;
+  align-items: center 
+}
+
+.team-home {
+  border-bottom: 2px solid #eeee;
+  border-top: 2px solid #eeee;
+}
+
+.team-home, .supporters-home {
+  background-color: #ffff;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+}
+
+.section-title {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+ .section-subtitle, .section-subtitle-supporters {
+  width: 70%;
+  margin: 0 auto; 
+  padding-top: 5px;
+  font-size: 24px;
+}
+
+.section-subtitle {
+    padding-bottom: 50px;
+}
+
+.section-subtitle-supporters {
+   padding-bottom: 20px;
+}
+
+.work-list {
+   width: 75%;
+   margin: 0 auto;
+}
+
+.cards {
+   justify-content: space-around;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+
+.card {
+  width: 30%;
+/*  margin-bottom: 40px;*/
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+
+}
+
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.home-row, .section-subtitle, .work-list  {
+  width: 85%;
+}
+
+.home-row-color {
+  padding-bottom: 30px;
+}
+
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+.home-row, .section-subtitle, .work-list, .section-subtitle-supporters  {
+	width: 85%;
+}
+
+.home-row-color {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.home-title {
+  font-size: 21px;
+}
+
+.home-content {
+  font-size: 18px;
+}
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+.home-row, .section-subtitle, .work-list, .section-subtitle-supporters  {
+  width: 80%;
+}
+
+.home-description {
+	padding-top: 50px;
+}
+
+.card {
+  width: 45%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.home-row-color {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.home-title {
+  font-size: 21px;
+  line-height: 28px;
+}
+
+.home-content {
+  font-size: 18px;
+}
+
+.section-title {
+  font-size: 28px;
+ 
+}
+
+ .section-subtitle, .section-subtitle-supporters {
+
+  font-size: 21px;
+   line-height: 28px;
+
+}
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+.home-row, .section-subtitle, .work-list, .section-subtitle-supporters {
+  width: 80%;
+}
+
+.home-description {
+	padding-top: 50px;
+}
+
+.cards {
+  flex-direction: column;  
+}
+
+.card {
+  width: 100%;  
+    margin-bottom: 40px; 
+}
+
+.home-row-color {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.home-title {
+  font-size: 21px;
+   line-height: 28px;
+}
+
+.home-content {
+  font-size: 18px;
+}
+
+.section-title {
+  font-size: 28px;
+ 
+}
+
+ .section-subtitle, .section-subtitle-supporters {
+
+  font-size: 21px;
+   line-height: 28px;
+
+}
+
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+.home-row, .section-subtitle, .work-list, .section-subtitle-supporters {
+  width: 80%;
+}
+
+.home-description {
+	padding-top: 50px;
+}
+
+.cards {
+  flex-direction: column;  
+}
+
+
+.card {
+  width: 100%;  
+   margin-bottom: 40px;  
+}
+
+.home-row-color {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.home-title {
+  font-size: 18px;
+   line-height: 24px;
+}
+
+.home-content {
+  font-size: 16px;
+}
+
+.section-title {
+  font-size: 24px;
+ 
+}
+
+ .section-subtitle, .section-subtitle-supporters {
+
+  font-size: 18px;
+   line-height: 24px;
+
+}
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+.home-row, .section-subtitle, .work-list, .section-subtitle-supporters  {
+  width: 85%;
+}
+
+.home-description {
+	padding-top: 50px;
+}
+
+.cards {
+  flex-direction: column;  
+}
+
+.card {
+  width: 100%; 
+  margin-bottom: 40px;     
+  
+}
+
+.home-row-color {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.home-title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.home-content {
+  font-size: 16px;
+}
+
+.section-title {
+  font-size: 21px;
+ 
+}
+
+ .section-subtitle, .section-subtitle-supporters {
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
+}
+

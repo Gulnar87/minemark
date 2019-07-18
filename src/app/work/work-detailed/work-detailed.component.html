@@ -1,0 +1,27 @@
+<!-- Jumbotron -->
+<!-- <div class="jumbotron-fluid text-center">
+     <div class="view overlay my-0 waves-light " mdbWavesEffect>
+          <img [src]="work.picTop" class="img-fluid d-block w-100" alt="">
+     </div>
+</div> -->
+<!-- Jumbotron -->
+
+<div class="row work-detailed-row">
+  	<div class="col-12">
+  		<h2 class="work-title text-center font-weight-bold pb-3"> {{ work.title }}  </h2>
+      <p class="work-description pb-2" *ngFor="let description of work.descriptions">  {{ description.paragraph }} </p>
+     </div>
+     <div class="col-12">
+          <mdb-carousel [animation]="'slide'">
+               <mdb-carousel-item *ngFor="let picture of work.pictures">
+                    <img class="d-block w-100" [src]="picture.carouselPic" [alt]="picture.alt">
+               </mdb-carousel-item> 
+          </mdb-carousel>
+     </div> 
+</div>
+
+
+
+
+
+

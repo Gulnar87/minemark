@@ -1,0 +1,313 @@
+
+.navbar {
+	background-color: #f9f9f9;
+
+}
+
+.logo {
+  width: 188px;
+  height: 70px;
+  margin-left: 30px;
+}
+
+.navbar-nav .nav-link {
+	color: #2d2d2d;
+	
+}
+
+
+.nav-item {
+	padding-left: 25px;
+	font-family:  'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.navbar-nav .menu-list a:hover {
+  text-decoration: none;
+  color: #016c36;
+  cursor: pointer;
+
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link {
+    border-bottom: 5px solid #016c36;
+    display: inline-block;
+    color: #016c36;
+}
+
+
+
+
+.donate .btn {
+	font-weight: bold;	
+	font-size: 16px;
+	font-family:  'Roboto', sans-serif;
+  margin-right: 30px;
+
+}
+
+
+.navbar {
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+}
+
+.affix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+    background-color: transparent;
+}
+
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.logo {
+
+  margin-left: 10px;
+  padding-left: 0;
+  width: 160px;
+  height: 60px;
+}
+
+.navbar-nav  {
+  padding-top: 20px;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+  padding-right: 0;
+}
+
+
+.nav-item {
+
+  font-size: 14px;
+  padding-bottom: 15px;
+
+}
+
+.nav-link {
+  margin: 0;
+  padding: 0;
+
+}
+
+.donate .btn {
+
+  font-size: 14px;
+
+}
+
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+.logo {
+  margin-left: 10px;
+  padding-left: 0;
+  width: 150px;
+  height: 56px;
+}
+
+.navbar-nav  {
+  padding-top: 20px;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+  padding-right: 0;
+}
+
+
+.nav-item {
+
+  font-size: 14px;
+  padding-bottom: 15px;
+
+
+}
+
+.nav-link {
+   margin: 0;
+   padding: 0;
+
+}
+
+.donate .btn {
+
+  font-size: 14px;
+
+}
+
+
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+  .logo {
+
+  margin-left: 10px;
+  padding-left: 0;
+  width: 130px;
+  height: 49px;
+}
+
+.navbar-nav  {
+  padding-top: 20px;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+  padding-right: 0;
+}
+
+
+.nav-item {
+
+  font-size: 12px;
+  padding-bottom: 15px;
+
+
+}
+
+.nav-link {
+   margin: 0;
+   padding: 0;
+
+}
+
+.donate .btn {
+
+  font-size: 12px;
+
+}
+
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+  .logo {
+  margin-left: 10px;
+  padding-left: 0;
+  width: 110px;
+  height: 41px;
+}
+
+.navbar-nav  {
+  padding-top: 20px;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+  padding-right: 0;
+}
+
+
+.nav-item {
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+.donate .btn {  
+  font-size: 12px;
+
+}
+
+.nav-link {
+   margin: 0;
+   padding: 0;
+
+}
+
+
+
+
+}
+
+
+
+
+/*********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+  .logo {
+
+  margin-left: 10px;
+  padding-left: 0;
+  width: 100px;
+  height: 37px;
+}
+
+.navbar-nav  {
+  padding-top: 20px;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+  padding-right: 0;
+}
+
+
+.nav-item {
+
+  font-size: 10px;
+  padding-bottom: 15px;
+
+
+}
+
+.donate .btn {
+   
+  font-size: 10px;
+ 
+}
+
+.nav-link {
+   margin: 0;
+   padding: 0;
+
+}
+
+
+}

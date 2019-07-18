@@ -1,0 +1,36 @@
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-faded header-nav" data-toggle="affix">
+    <a class="navbar-brand"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"  routerLink="/" >
+      <img src="assets/MineMarkLogo.png" class="logo" alt="logo">
+    </a>
+    <button (click)="isCollapsed = !isCollapsed"  
+         [attr.aria-expanded]="!isCollapsed" class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse" id="collapsable-nav" [ngbCollapse]="!isCollapsed" >
+      <ul class="navbar-nav  ml-auto">
+        <li class="nav-item menu-list"   routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link"  [routerLink]="['/', 'what']"> what we do  </a>
+        </li> 
+        <li class="nav-item menu-list"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link "  [routerLink]="['/', 'network']"> Team | Network </a>
+        </li>
+           <li class="nav-item menu-list"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link "  [routerLink]="['/', 'work']" > Our Work </a>
+        </li>
+           <li class="nav-item donate"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          <a class="btn btn-danger btn-sm my-2 my-sm-0 " [routerLink]="['/', 'donate']" > Donate </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+

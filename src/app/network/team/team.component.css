@@ -1,0 +1,242 @@
+.subtitle-row {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.team-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.team-subtitle {
+	font-size: 24px;
+}
+
+.member-row {
+	width: 75%;
+	margin: 0 auto;
+}
+
+
+.name {
+   font-size: 28px;
+	color: #df0113;
+}
+
+.profession {
+	font-size: 24px;
+}
+
+.bio {
+	font-size: 21px;
+}
+
+
+.columns-team {
+	padding-bottom: 50px;
+}
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+ .member-row  {
+	width: 85%;
+}
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+ .member-row  {
+	width: 85%;
+}
+
+.name {
+   font-size: 26px;
+}
+
+.profession {
+	font-size: 21px;
+}
+
+
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+.member-row {
+	width: 80%;
+	
+}
+
+.columns-team {
+	padding-bottom: 30px;
+	padding-top: 0px;
+}
+
+
+.description {
+  padding-top: 30px;
+}
+
+
+.team-title {
+	font-size: 28px;
+	
+}
+
+.team-subtitle {
+  font-size: 21px;
+}
+
+
+.name {
+  font-size: 24px;
+}
+
+.profession {
+	font-size: 21px;
+}
+
+.bio {
+	font-size: 18px;
+}
+
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+
+.member-row {
+  width: 80%;
+  margin-bottom: 0px;
+}
+
+
+.description {
+  padding-top: 30px;
+}
+
+.team-title {
+	font-size: 28px;
+	
+}
+
+.team-subtitle {
+	font-size: 21px;
+}
+
+
+.name {
+  font-size: 24px;
+}
+
+.profession {
+	font-size: 19px;
+}
+
+.bio {
+	font-size: 18px;
+}
+
+
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+ .member-row  {
+	width: 85%;
+}
+
+
+.description {
+	padding-top: 30px;
+}
+
+
+.team-title {
+	font-size: 24px;
+	
+}
+
+.team-subtitle {
+  font-size: 19px;
+}
+
+
+.name {
+  font-size: 21px;
+}
+
+.profession {
+	font-size: 18px;
+}
+
+.bio {
+	font-size: 18px;
+}
+
+
+
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+
+.member-row {
+	width: 85%;
+	margin-bottom: 0px;
+
+}
+
+
+.description {
+	padding-top: 30px;
+}
+
+
+.team-title {
+	font-size: 21px;
+	
+}
+
+.team-subtitle {
+  font-size: 18px;
+}
+
+
+.name {
+  font-size: 18px;
+}
+
+.profession {
+   font-size: 17px;
+}
+
+.bio {
+	font-size: 16px;
+}
+
+
+}

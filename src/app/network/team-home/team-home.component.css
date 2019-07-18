@@ -1,0 +1,237 @@
+.swiper-container {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  width: 75%;
+  margin: 0 auto;
+
+}
+
+
+.swiper-button-prev:active, .swiper-button-prev:focus, .swiper-button-next:active, .swiper-button-next:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none
+}
+
+.team-row {
+  position: relative;
+}
+
+.swiper-button-prev {
+ position: absolute;
+ left: 120px;
+
+
+}
+
+.swiper-button-next {
+   position: absolute;
+   right: 120px;
+
+
+}
+
+.swiper-slide {
+  padding-right: 0; 
+
+}
+
+
+.sub-title-team {
+	font-size: 24px;
+}
+
+.name {
+	font-size: 21px;
+	color: #df010e;
+}
+
+
+.profession  {
+	font-size: 16px;
+}
+
+
+   
+.card {
+  background: #fff;
+  min-height: 320px;
+  background-color: #ffff;
+
+}
+
+
+
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.swiper-button-prev {
+  left: 50px;
+}
+
+.swiper-button-next {
+   right: 50px;
+}
+
+.swiper-container {
+  width: 85%;
+}
+
+
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.swiper-container {
+  width: 85%;
+}
+
+.swiper-button-prev {
+  left: 30px;
+}
+
+.swiper-button-next {
+   right: 30px;
+}
+
+/*.name {
+  font-size: 19px;
+
+}
+
+.profession  {
+  font-size: 17px;
+}*/
+
+.card {
+  min-height: 290px;
+
+}
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+.swiper-container {
+  width: 80%;
+}
+
+.swiper-button-prev {
+
+  left: 30px;
+
+}
+
+.swiper-button-next {
+
+   right: 30px;
+
+}
+
+/*.name {
+  font-size: 19px;
+
+}
+
+.profession  {
+  font-size: 17px;
+}*/
+
+.card {
+  min-height: 300px;
+
+}
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+.swiper-container {
+  width: 80%;
+}
+
+
+.swiper-button-prev {
+
+  left: 20px;
+
+}
+
+.swiper-button-next {
+
+   right: 20px;
+
+}
+
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+.swiper-container {
+  width: 85%;
+}
+
+
+.swiper-button-prev {
+
+  left: 5px;
+
+}
+
+.swiper-button-next {
+
+   right: 5px;
+
+}
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+.swiper-container {
+  width: 85%;
+}
+
+
+.swiper-button-prev {
+
+  left: 10px;
+
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.name {
+  font-size: 19px;
+
+}
+
+}
+
+
+
+

@@ -1,0 +1,189 @@
+.swiper-container {
+/*  padding-left: 10px;
+  padding-right: 10px;*/
+  padding-bottom: 20px;
+  width: 75%;
+} 
+
+.support-title {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+
+.supporters-row {
+  position: relative;
+
+}
+
+
+.swiper-slide {
+  margin: 0 auto;
+}
+.swiper-button-prev:active, .swiper-button-prev:focus, .swiper-button-next:active, .swiper-button-next:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none
+}
+
+
+
+.swiper-button-prev {
+ position: absolute;
+ left: 120px;
+ top: 70px;
+
+
+
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: 120px;
+   top: 70px;
+
+
+}
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.swiper-button-prev {
+  left: 50px;
+}
+
+.swiper-button-next {
+   right: 50px;
+}
+
+.swiper-container {
+
+  width: 85%;
+} 
+
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.swiper-container {
+
+  width: 85%;
+} 
+
+.swiper-button-prev {
+  left: 40px;
+}
+
+.swiper-button-next {
+   right: 40px;
+}
+  
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+.swiper-container {
+
+  width: 80%;
+} 
+
+
+.swiper-button-prev {
+
+  left: 50px;
+
+}
+
+.swiper-button-next {
+
+   right: 50px;
+
+}
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+.swiper-container {
+
+  width: 80%;
+} 
+
+
+.swiper-button-prev {
+
+  left: 30px;
+
+}
+
+.swiper-button-next {
+
+   right: 30px;
+
+}
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+.swiper-container {
+
+  width: 85%;
+} 
+
+
+.swiper-button-prev {
+
+  left: 30px;
+
+}
+
+.swiper-button-next {
+
+   right: 30px;
+
+}
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+.swiper-container {
+
+  width: 85%;
+} 
+
+
+.swiper-button-prev {
+
+  left: 30px;
+
+}
+
+.swiper-button-next {
+
+   right: 30px;
+
+}
+
+
+}

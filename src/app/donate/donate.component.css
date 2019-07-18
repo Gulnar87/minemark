@@ -1,0 +1,169 @@
+.text-block {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+.text-block h1 {
+
+  background: rgba(223, 1, 19, 0.7); 
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 52px;
+
+}
+
+.work-list {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.work-title {
+  font-size: 28px;
+}
+
+.work-description {
+  font-size: 21px;
+}
+
+
+.bank-details {
+  border: 2px solid #eeee;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.bank-details h2 {
+  color: #ff3547;
+   font-size: 28px;
+}
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.text-block h1 {
+  font-size: 42px;
+}
+
+.work-list {
+   width: 85%;
+}
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.text-block h1 {
+  font-size: 32px;
+}
+
+.work-list {
+   width: 85%;
+}
+
+.work-title, .bank-details h2 {
+  font-size: 26px;
+}
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+.text-block h1 {
+  font-size: 28px;
+}
+
+.work-list {
+   width: 80%;
+}
+
+.work-title, .bank-details h2 {
+  font-size: 24px;
+}
+
+.work-description {
+  font-size: 18px;
+}
+
+}
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+.text-block h1 {
+  font-size: 22px;
+}
+
+.work-list {
+   width: 80%;
+}
+
+.work-title, .bank-details h2 {
+  font-size: 24px;
+}
+
+.work-description {
+  font-size: 18px;
+}
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+.text-block h1 {
+  font-size: 22px;
+
+}
+
+.work-list {
+   width: 85%;
+}
+
+.work-title, .bank-details h2 {
+  font-size: 21px;
+}
+
+.work-description {
+  font-size: 18px;
+}
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+.text-block h1 {
+  font-size: 18px;
+
+}
+
+.text-block {
+  top: 50%;
+}
+
+.work-list {
+   width: 85%;
+}
+.work-title, .bank-details h2 {
+  font-size: 18px;
+}
+
+.work-description {
+  font-size: 16px;
+}
+
+
+}

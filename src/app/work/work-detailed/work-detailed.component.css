@@ -1,0 +1,134 @@
+.work-detailed-row {
+		width: 75%;
+		margin: 0 auto;
+		margin-bottom: 40px;
+    padding-bottom: 50px;
+		margin-top: 40px;
+}
+
+
+.gallery-pic {
+
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+
+.work-title {
+  font-size: 32px;
+
+}
+
+.work-description {
+  font-size: 21px;
+}
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+.work-detailed-row {
+    width: 85%;
+
+}
+
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+.work-detailed-row {
+    width: 85%;
+
+}
+
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+.work-detailed-row {
+    width: 80%;
+}
+
+.work-title {
+  font-size: 28px;
+
+}
+
+.work-description {
+  font-size: 18px;
+}
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+.work-detailed-row {
+    width: 80%;
+}
+
+.work-title {
+  font-size: 28px;
+
+}
+
+.work-description {
+  font-size: 18px;
+}
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+.work-detailed-row {
+    width: 85%;
+}
+
+.work-title {
+  font-size: 24px;
+
+}
+
+.work-description {
+  font-size: 18px;
+}
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+.work-detailed-row {
+    width: 85%;
+}
+
+.work-title {
+  font-size: 21px;
+
+}
+
+.work-description {
+  font-size: 16px;
+}
+
+}
+
