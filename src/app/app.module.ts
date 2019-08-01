@@ -1,9 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// import { CoreModule } from './core/core.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -15,8 +13,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
-
-// import { HomeListComponent } from '../home/home-list/home-list.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { SupportersComponent } from './home/supporters/supporters.component';
 import { NgxGalleryModule } from 'ngx-gallery';
@@ -32,11 +28,6 @@ import {NetworkService } from './network/network.service';
 import { AdvisorsComponent } from './network/advisors/advisors.component';
 import { WorkDetailedComponent } from './work/work-detailed/work-detailed.component';
 import { DonateComponent } from './donate/donate.component';
-
-
-
-// import { Ng2PageScrollModule } from 'ng2-page-scroll';
-
 
 
 

@@ -43,6 +43,11 @@
    font-size: 28px;
 }
 
+.col-donatetext {
+  display: flex;
+  align-items: center 
+}
+
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {
 
