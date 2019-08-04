@@ -23,9 +23,7 @@ export class AppComponent {
   ngOnInit() {
 
   	  	  this.dsService.getWorks()
-            .subscribe(
- 
-            );
+            .subscribe();
 
 
 }

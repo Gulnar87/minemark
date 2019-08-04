@@ -42,8 +42,8 @@ export class DataStorageService {
         environment.apiUrlWork
       )
       .pipe(
-        map(projects => {
-          return projects.map(work => {
+        map(works => {
+          return works.map(work => {
 
             return {
               ...work,
@@ -52,7 +52,9 @@ export class DataStorageService {
           });
         }),
         tap(works => {
+
              works.sort((a: Work, b: Work) => b.id - a.id);
+
           this.workService.setWorks(works);
         })
       );
