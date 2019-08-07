@@ -23,7 +23,7 @@
 <div class="row team-home">
 	<div class="col-12">
 		<h3 class="section-title text-center"> Meet the team </h3>
-		  <h6 class="section-subtitle text-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis. </h6>
+		  <h6 class="section-subtitle text-center">In this section, you can find more information about the people behind the Mine Mark Project </h6>
           <app-team-home></app-team-home>    
           <div class="text-center">
             <a class="btn btn-danger" [routerLink]="['/', 'network']"> Read more </a>  
@@ -33,7 +33,7 @@
 <div class="work-home row">
 	<div class="col-12">
 		<h3 class="section-title text-center"> Our Work </h3>
-	    <h6 class="section-subtitle text-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis. et iusto odio dignissimos ducimus qui blanditiis.</h6>
+	    <h6 class="section-subtitle text-center">In this section, you find an overview of our current and future projects</h6>
 		<div class="work-list cards">
 			<app-work-item class="work-item card hoverable animated fadeInUp wow"
 			 *ngFor="let workEl of works; let i = index;" 
@@ -41,21 +41,15 @@
              [index]="i" 
              style="cursor: pointer">
       	    </app-work-item>
-      		<a class="btn btn-danger mt-5" [routerLink]="['/', 'work']"> See all </a>
+   
       	</div>
-    </div>
+      	<div class="text-center">
+      		<a class="btn btn-danger mt-5 px-5" [routerLink]="['/', 'work']"> See all </a></div>
+      	</div>
 </div>
 <div class="jumbotron-fluid">
 	<div class="view my-0 waves-light " mdbWavesEffect>
 		<img src="assets/school.jpg" class="img-fluid" alt="">
-		<!-- <div class="mask rgba-red-light flex-center text-block">
-			<div class="text-white text-center py-5 px-4 my-5">
-				<h3 class="mx-5 mb-5">
-    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
-                </h3>
-            </div>
-        </div> -->
     </div>
 </div>
 
