@@ -14,8 +14,10 @@ export class SupportersComponent implements OnInit {
   ngOnInit() {
   }
 
- @ViewChild(SwiperComponent) componentRef?: SwiperComponent;
-@ViewChild(SwiperDirective) directiveRef?: SwiperDirective;
+ @ViewChild(SwiperComponent) componentRef: SwiperComponent;
+@ViewChild(SwiperDirective) directiveRef: SwiperDirective;
+
+
 
 
  public config: SwiperConfigInterface = {
@@ -23,34 +25,38 @@ export class SupportersComponent implements OnInit {
     slidesPerView: 5,
      // loop: true,
     keyboard: true,
-    mousewheel: false,
+    mousewheel: true,
     scrollbar: false,
     navigation: true,
     pagination: true,
     spaceBetween: 0,
     grabCursor: true,
     centeredSlides: false,
+     slidesPerGroup: 5,
+
 
      breakpoints: {
         1024: {
           slidesPerView: 4,
-          // spaceBetween: 20,
+           slidesPerGroup: 4,
         },
         768: {
           slidesPerView: 3,
-          // spaceBetween: 20,
+          slidesPerGroup: 3,
         },
         640: {
           slidesPerView: 2,
-          // spaceBetween: 20,
+           slidesPerGroup: 2,
         },
         576: {
           slidesPerView: 2,
-         
+           slidesPerGroup: 2,
         },
 
         480: {
           slidesPerView: 1,
+           slidesPerGroup: 1,
+
          
         }
       }
@@ -63,8 +69,10 @@ export class SupportersComponent implements OnInit {
     clickable: true,
     hideOnClick: false,
 
-     
+ 
   };
+
+
 
     private navigation: {
         nextEl: '.swiper-button-next',
