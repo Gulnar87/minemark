@@ -17,6 +17,7 @@
   <base href=".">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#df0113" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta property='og:title' content="Landmine Risk Education - Play Safe, Be Safe!"/>
   <meta property="og:type" content="website" />
@@ -25,7 +26,9 @@
   <meta property="og:image" content="assets/meta-og-image.png"/>
   <meta property="og:image" content="assets/meta-og-image-small.png" />
   <meta property="og:site_name" content="minemark">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="./assets/manifest/manifest.json">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./assets/meta-og-image.png"> <!-- as safari will ignore the icons in the manifest.json -->
   <link rel="preload" href="./Roboto-Bold.woff2" as="font">
   <link rel="preload" href="./Roboto-Light.woff2" as="font">
   <link rel="preload" href="./Roboto-Regular.woff2" as="font">
@@ -35,12 +38,19 @@
 
 
   <app-root></app-root>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./assets/js/script.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-new WOW().init();
-</script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <!-- On the off-chance the user doesn't have JS enabled -->
+  <noscript>
+    <div style="text-align:center; padding: 2rem;">
+      The MineMark website requires Javascript to be turned on.
+    </div>
+  </noscript>
 </body>
 </html>

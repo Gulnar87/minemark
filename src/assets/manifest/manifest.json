@@ -1,0 +1,21 @@
+{
+  "short_name": "MineMark",
+  "name": "Mine Mark",
+  "icons": [
+    {
+      "src": "/assets/manifest/manifest-icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/images/manifest-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/maps/",
+  "theme_color": "#df0113"
+}
