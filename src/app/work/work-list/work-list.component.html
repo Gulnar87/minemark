@@ -10,7 +10,7 @@
 </div>
 <div class="row work-list">
     <div class="col-12 text-center ">
-        <p class="subtitle-work"> 
+        <p class="subtitle-work">
            In this section, you find an overview of our current and future projects
         </p>
     </div>
@@ -18,20 +18,20 @@
         <div class="row">
             <div class="col-md-6 col-12">
                 <div>
-                    <img [src]="workEl.picCard" [alt]="workEl.alt" class="img-fluid card-img">
+                    <img [src]="workEl.picCard" loading="lazy" [alt]="workEl.alt" class="img-fluid card-img">
                 </div>
             </div>
             <div class="col-md-6 col-12 col-content">
                <h4 class=" work-title"> {{ workEl.title }}</h4>
                <div class="less content">
-                    <p class="work-description " *ngFor="let description of workEl.descriptions"> {{ description.paragraph }} </p>
-                </div> 
+                    <p class="work-description" *ngFor="let description of workEl.descriptions"> {{ description.paragraph }} </p>
+                </div>
                 <div class="pt-3">
-                    <a [routerLink]="[i]" class="read-more card-link "  role="button" data-toggle="button"  aria-pressed="true">  Read more 
+                    <a [routerLink]="[i]" class="read-more card-link "  role="button" data-toggle="button"  aria-pressed="true">  Read more
                         <fa-icon [icon]="faAngleDoubleRight" ></fa-icon>
                     </a>
                 </div>
-             
+
             </div>
         </div>
         <hr class="mt-5 mb-5">
