@@ -19,12 +19,16 @@
   white-space: nowrap;
 }
 
-
-
 .read-more:link, .read-more:visited{
   text-decoration: none;
   color:  #ff3547;
- }
+
+}
+
+.read-more .faAngleDoubleRight {
+  position: relative;
+  top: 1px;
+}
 
  .read-more {
   font-size: 16px;
@@ -50,7 +54,7 @@
 
 
 }
-     
+
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
