@@ -1,9 +1,9 @@
 <div class="team-row" >
         <div  class="swiper-container " [swiper]="config">
-            <div class="swiper-wrapper mr-0">        
-                <div class="swiper-slide animated zoomIn wow" *ngFor="let member of team; let i = index; " > 
-                  
-                    <div class="card hoverable">
+            <div class="swiper-wrapper mr-0">
+                <div class="swiper-slide animated zoomIn wow" *ngFor="let member of team; let i = index; " >
+
+                    <div class="card">
                         <div class="img">
                             <img [src]="member.pic" alt="" class="img-fluid card-img">
                         </div>
@@ -11,14 +11,14 @@
                             <h5 class="card-title name">  {{ member.name}}  </h5>
                             <h5 class="card-title profession"> {{ member.profession}} </h5>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
-           
+
         </div>
         <div class="swiper-button-prev swiper-button-black" [hidden]="config.navigation === false"></div>
-        <div class="swiper-button-next swiper-button-black" [hidden]="config.navigation === false"></div>  
-   
+        <div class="swiper-button-next swiper-button-black" [hidden]="config.navigation === false"></div>
+
 </div>
 
 
