@@ -40,10 +40,20 @@
   <app-root></app-root>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./assets/js/script.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
   <script>
     new WOW().init();
+  </script>
+
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/serviceworker.js');
+      });
+    }
   </script>
 
   <!-- On the off-chance the user doesn't have JS enabled -->
