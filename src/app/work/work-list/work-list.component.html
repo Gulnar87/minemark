@@ -1,49 +1,55 @@
 <!-- Jumbotron -->
 <div class="color">
-<div class="jumbotron-fluid text-center">
+  <div class="jumbotron-fluid text-center">
     <div class="view overlay my-0 waves-light " mdbWavesEffect>
-        <img src="assets/DSC03168.JPG" class="img-fluid" alt="">
-        <div class="text-block">
-            <h1 class="white-text"> Our Work </h1>
-        </div>
+      <img src="assets/DSC03168.JPG" class="img-fluid" alt="" />
+      <div class="text-block">
+        <h1 class="white-text">Our Work</h1>
+      </div>
     </div>
-</div>
-<div class="row work-list">
+  </div>
+  <div class="container">
+  <div class="row work-list">
     <div class="col-12 text-center ">
-        <p class="subtitle-work">
-           In this section, you find an overview of our current and future projects
-        </p>
+      <p class="subtitle-work">
+        In this section, you find an overview of our current and future projects
+      </p>
     </div>
-    <div class="col-12"  *ngFor="let workEl of works; let i = index;">
-        <div class="row">
-            <div class="col-md-6 col-12">
-                <div>
-                    <img [src]="workEl.picCard" [alt]="workEl.alt" class="img-fluid card-img">
-                </div>
-            </div>
-            <div class="col-md-6 col-12 col-content">
-               <h4 class=" work-title"> {{ workEl.title }}</h4>
-               <div class="less content">
-                    <p class="work-description " *ngFor="let description of workEl.descriptions"> {{ description.paragraph }} </p>
-                </div>
-                <div class="pt-3">
-                    <a [routerLink]="[i]" class="read-more card-link"  role="button" data-toggle="button"  aria-pressed="true">Read more
-
-                    </a>
-                </div>
-
-            </div>
+    <div class="col-12" *ngFor="let workEl of works; let i = index">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <div>
+            <img
+              [src]="workEl.picCard"
+              [alt]="workEl.alt"
+              class="img-fluid card-img"
+            />
+          </div>
         </div>
-        <hr class="mt-5 mb-5">
+        <div class="col-md-6 col-12 col-content">
+          <h4 class=" work-title">{{ workEl.title }}</h4>
+          <div class="less content">
+            <p
+              class="work-description "
+              *ngFor="let description of workEl.descriptions"
+            >
+              {{ description.paragraph }}
+            </p>
+          </div>
+          <div class="pt-3">
+            <a
+              [routerLink]="[i]"
+              class="read-more card-link"
+              role="button"
+              data-toggle="button"
+              aria-pressed="true"
+              >Read more
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-5 mb-5" />
     </div>
+  </div>
 </div>
-
 </div>
-
-
-
-
-
-
-
-

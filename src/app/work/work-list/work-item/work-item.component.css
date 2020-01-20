@@ -21,6 +21,7 @@
 
 .read-more:link, .read-more:visited{
   text-decoration: none;
+  font-weight: 400;
   color:  #ff3547;
 
 }
@@ -32,6 +33,7 @@
 
  .read-more {
   font-size: 16px;
+  font-weight: 400;
  }
 
  .card-title {
