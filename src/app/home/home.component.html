@@ -35,11 +35,10 @@
 		<h3 class="section-title text-center"> Our Work </h3>
 	    <h6 class="section-subtitle text-center">In this section, you find an overview of our current and future projects</h6>
 		<div class="work-list cards">
-			<app-work-item class="work-item card hoverable animated fadeInUp wow"
+			<app-work-item class="work-item card hoverable animated fadeIn wow"
 			 *ngFor="let workEl of works; let i = index;"
              [work]="workEl"
-             [index]="i"
-             style="cursor: pointer">
+             [index]="i">
       	    </app-work-item>
 
       	</div>
