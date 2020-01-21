@@ -5,7 +5,7 @@
 	<div class="col-lg-4 col-md-6 col-12 d-flex align-items-stretch col-advisor" *ngFor="let advisor of advisors; let i = index;" >
 		<div class="card hoverable">
 			<div class="card-img">
-				<img [src]="advisor.pic" class="img-fluid" [alt]="advisor.alt" width="700" height="568">
+				<img [src]="advisor.pic" loading="lazy" class="img-fluid" [alt]="advisor.alt" width="700" height="568">
 			</div>
 			<div class="col-des card-body">
 				<h4 class="advisor-name"> {{ advisor.name}}</h4>

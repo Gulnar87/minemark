@@ -20,23 +20,22 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.css",
-               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-                "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
-                "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
-                "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
-                "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
-                
-                "node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
-                "node_modules/angular-bootstrap-md/scss/mdb-free.scss",
-   
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
+              "node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
+              "node_modules/angular-bootstrap-md/scss/mdb-free.scss"
             ],
             "scripts": [
-               "node_modules/chart.js/dist/Chart.js",
-               "node_modules/hammerjs/hammer.min.js"
+              "node_modules/chart.js/dist/Chart.js",
+              "node_modules/hammerjs/hammer.min.js"
             ],
             "es5BrowserSupport": true
           },
@@ -63,7 +62,9 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "src/ngsw-config.json"
             }
           }
         },
@@ -97,7 +98,8 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ]
           }
         },
