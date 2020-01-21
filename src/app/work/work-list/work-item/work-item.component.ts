@@ -20,7 +20,7 @@ export class WorkItemComponent implements OnInit {
 
   ngOnInit() {
 
-  	 
+
   }
 
 }
