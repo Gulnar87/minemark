@@ -1,0 +1,8 @@
+SetEnvIf Host ^minemark-dev.herokuapp.com !no-auth-required
+
+AuthUserFile /.htpasswd
+AuthName "Locked"
+AuthType Basic
+Require valid-user
+Allow env no-auth-required
+Satisfy Any
