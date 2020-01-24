@@ -28,7 +28,9 @@
                 <p class="work-description" *ngFor="let description of workEl.descriptions"> {{ description.paragraph }} </p>
             </div>
             <div class="pt-3">
-              <a [routerLink]="[i]" class="read-more card-link "  role="button" data-toggle="button"  aria-pressed="true">Read more</a>
+              <a [routerLink]="[i]" class="read-more card-link "  role="button" data-toggle="button"  aria-pressed="true">Read more
+                <span class="faAngleDoubleRight"><fa-icon [icon]="faAngleDoubleRight"></fa-icon></span>
+              </a>
             </div>
 
           </div>
