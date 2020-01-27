@@ -33,16 +33,15 @@
 }
 
 .more-info:link, .more-info:visited{
-   text-decoration: none;
-  color:  #ff3547;
+  text-decoration: none;
  }
 
- .more-info fa-icon {
-   margin-left: 4px;
-   position: relative;
-   top: -1px;
-   color: #666;
- }
+.more-info fa-icon {
+  margin-left: 4px;
+  position: relative;
+  top: -1px;
+  color: #666;
+}
 
 
 

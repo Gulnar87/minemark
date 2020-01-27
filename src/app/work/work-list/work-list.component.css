@@ -56,6 +56,11 @@
   color:  #ff3547;
 }
 
+.read-more .faAngleDoubleRight {
+  position: relative;
+  top: 1px;
+}
+
 .color {
   background-color: #f9f9f9;
 }
