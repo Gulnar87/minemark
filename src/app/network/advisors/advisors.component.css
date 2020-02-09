@@ -33,9 +33,15 @@
 }
 
 .more-info:link, .more-info:visited{
-   text-decoration: none;
-  /* color:  #ff3547;*/
+  text-decoration: none;
  }
+
+.more-info fa-icon {
+  margin-left: 4px;
+  position: relative;
+  top: -1px;
+  color: #666;
+}
 
 
 
@@ -58,7 +64,7 @@
 }*/
 
 }
-     
+
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -117,7 +123,7 @@
 
 /*.advisor-name {
 	font-size: 21px;
-	
+
 }*/
 
 /*.advisor-profession {
@@ -142,7 +148,7 @@
 
 .advisor-name {
 	font-size: 19px;
-	
+
 }
 
 

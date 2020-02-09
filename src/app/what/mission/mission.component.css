@@ -58,6 +58,22 @@
   background-color: #f9f9f9;
 }
 
+.fa-file-pdf {
+	color: #ff3547;
+	padding-right: 20px;
+}
+
+.download {
+	color: black;
+	cursor: pointer;
+}
+
+.download-row {
+
+border-bottom: 1px solid black;
+
+}
+
 
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {
@@ -125,6 +141,9 @@
 	font-size: 18px;
 }
 
+ .download-row {
+ 	font-size: 16px;
+ }
 
 }
 
@@ -162,6 +181,10 @@
 .card-description {
 	font-size: 18px;
 }
+
+ .download-row {
+ 	font-size: 14px;
+ }
 
 
 }
@@ -202,6 +225,10 @@
 	font-size: 18px;
 }
 
+ .download-row {
+ 	font-size: 14px;
+ }
+
 
 }
 
@@ -238,6 +265,9 @@
 	font-size: 16px;
 }
 
+ .download-row {
+ 	font-size: 12px;
+ }
 
 
 }

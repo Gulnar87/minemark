@@ -28,6 +28,8 @@ import {NetworkService } from './network/network.service';
 import { AdvisorsComponent } from './network/advisors/advisors.component';
 import { WorkDetailedComponent } from './work/work-detailed/work-detailed.component';
 import { DonateComponent } from './donate/donate.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -37,14 +39,14 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   threshold: 50,
   spaceBetween: 5,
   slidesPerView: 1,
-  centeredSlides: true
+  centeredSlides: true,
 };
 
 
 @NgModule({
   declarations: [
     AppComponent,
-     HeaderComponent, 
+    HeaderComponent, 
     FooterComponent, 
     WhatComponent,
     MissionComponent,
@@ -73,7 +75,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     SwiperModule, 
     FontAwesomeModule,
     NgxGalleryModule,
-    FormsModule
+    FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     // Ng2PageScrollModule.forRoot()
 
  

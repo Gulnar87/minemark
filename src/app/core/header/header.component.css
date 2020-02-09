@@ -12,13 +12,13 @@
 
 .navbar-nav .nav-link {
 	color: #2d2d2d;
-	
+
 }
 
 
 .nav-item {
 	padding-left: 25px;
-	font-family:  'Roboto', sans-serif;
+	/* font-family:  'Roboto', sans-serif; */
 	font-weight: bold;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -42,7 +42,7 @@
 
 
 .donate .btn {
-	font-weight: bold;	
+	font-weight: bold;
 	font-size: 16px;
 	font-family:  'Roboto', sans-serif;
   margin-right: 30px;
@@ -88,7 +88,7 @@
 
 
 }
-     
+
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -249,7 +249,7 @@
   padding-bottom: 15px;
 }
 
-.donate .btn {  
+.donate .btn {
   font-size: 12px;
 
 }
@@ -298,9 +298,9 @@
 }
 
 .donate .btn {
-   
+
   font-size: 10px;
- 
+
 }
 
 .nav-link {

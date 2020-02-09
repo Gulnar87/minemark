@@ -12,7 +12,7 @@
 }
 
 .home-row {
-  margin: 0 auto; 
+  margin: 0 auto;
   width: 75%;
 }
 
@@ -26,7 +26,7 @@
 
 .hom-col {
   display: flex;
-  align-items: center 
+  align-items: center
 }
 
 .team-home {
@@ -48,7 +48,7 @@
 
  .section-subtitle, .section-subtitle-supporters {
   width: 70%;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding-top: 5px;
   font-size: 24px;
 }
@@ -113,7 +113,7 @@
 
 
 }
-     
+
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -175,7 +175,7 @@
 
 .section-title {
   font-size: 28px;
- 
+
 }
 
  .section-subtitle, .section-subtitle-supporters {
@@ -200,12 +200,12 @@
 }
 
 .cards {
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .card {
-  width: 100%;  
-    margin-bottom: 40px; 
+  width: 100%;
+    margin-bottom: 40px;
 }
 
 .home-row-color {
@@ -224,7 +224,7 @@
 
 .section-title {
   font-size: 28px;
- 
+
 }
 
  .section-subtitle, .section-subtitle-supporters {
@@ -250,13 +250,13 @@
 }
 
 .cards {
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 
 .card {
-  width: 100%;  
-   margin-bottom: 40px;  
+  width: 100%;
+   margin-bottom: 40px;
 }
 
 .home-row-color {
@@ -275,7 +275,7 @@
 
 .section-title {
   font-size: 24px;
- 
+
 }
 
  .section-subtitle, .section-subtitle-supporters {
@@ -299,13 +299,13 @@
 }
 
 .cards {
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .card {
-  width: 100%; 
-  margin-bottom: 40px;     
-  
+  width: 100%;
+  margin-bottom: 40px;
+
 }
 
 .home-row-color {
@@ -324,7 +324,7 @@
 
 .section-title {
   font-size: 21px;
- 
+
 }
 
  .section-subtitle, .section-subtitle-supporters {
