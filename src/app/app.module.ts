@@ -9,6 +9,7 @@ import { WhatComponent } from './what/what.component';
 import { MissionComponent } from './what/mission/mission.component';
 import { NetworkComponent } from './network/network.component';
 import { TeamComponent } from './network/team/team.component';
+import { PublicationsComponent } from './publications/publications.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './core/header/header.component';
@@ -46,11 +47,12 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent, 
-    FooterComponent, 
+    HeaderComponent,
+    FooterComponent,
     WhatComponent,
     MissionComponent,
     NetworkComponent,
+    PublicationsComponent,
     TeamComponent,
     HomeComponent,
     SupportersComponent,
@@ -69,17 +71,17 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
    BrowserModule,
    AppRoutingModule,
    HttpClientModule,
-   SwiperModule, 
+   SwiperModule,
     NgbModule,
     MDBBootstrapModule.forRoot(),
-    SwiperModule, 
+    SwiperModule,
     FontAwesomeModule,
     NgxGalleryModule,
     FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
     // Ng2PageScrollModule.forRoot()
 
- 
+
     // CoreModule,
   ],
   providers: [{
