@@ -31,15 +31,15 @@
   top: 1px;
 }
 
- .read-more {
+.read-more {
   font-size: 16px;
   font-weight: 400;
- }
+}
 
- .card-title {
+.card-title {
   font-size: 18px;
   line-height: 24px;
- }
+}
 
 
 /********** Extra Large devices only **********/
