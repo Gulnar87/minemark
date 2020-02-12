@@ -1,0 +1,381 @@
+.text-block {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+.text-block h1 {
+  background: rgba(223, 1, 19, 0.7);
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 52px;
+  font-family: bebas-neue, sans-serif;
+  font-weight: bold;
+}
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .text-block h1 {
+    font-size: 42px;
+  }
+}
+
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .text-block h1 {
+    font-size: 32px;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+  .text-block h1 {
+    font-size: 28px;
+  }
+}
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and (max-width: 575px) {
+  .text-block h1 {
+    font-size: 22px;
+  }
+}
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+  .text-block h1 {
+    font-size: 22px;
+  }
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+  .text-block h1 {
+    font-size: 18px;
+  }
+
+  .text-block {
+    top: 50%;
+  }
+}
+
+/* VIDEOSECTION */
+
+.section {
+  margin: 80px 0;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.videoIntro {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.videoIntro h4 {
+  margin-bottom: 1rem;
+}
+
+.videoIntro .description {
+  font-size: 18px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+/* CSS FROM MISSION */
+
+.subtitle-row {
+	margin: 0 auto;
+	width: 75%;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+.subtitle-desc {
+	font-size: 24px;
+}
+
+.what-row {
+	margin: 0 auto;
+	width: 75%;
+	padding-bottom: 50px;
+}
+
+.section-title {
+	font-weight: bold;
+	font-size: 32px;
+	padding-bottom: 10px;
+}
+
+.description {
+	font-size: 21px;
+}
+
+.card {
+	margin-right: 0px;
+	margin-bottom: 40px;
+	background-color: #ffff;
+}
+
+.cards-title {
+	font-weight: bold;
+	font-size: 32px;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+.card-title {
+	color: #df0113 ;
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.card-description {
+	font-size: 18px;
+}
+
+.color {
+  background-color: #ffff;
+  border-bottom: 2px solid #eeee;
+  border-top: 2px solid #eeee;
+}
+
+.color-cards {
+  background-color: #f9f9f9;
+}
+
+.fa-file-pdf {
+	color: #ff3547;
+	padding-right: 20px;
+}
+
+.download {
+	color: black;
+	cursor: pointer;
+}
+
+.download-row {
+
+border-bottom: 1px solid black;
+
+}
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.subtitle-row, .what-row {
+	width: 85%;
+
+}
+
+
+
+}
+
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+.subtitle-row, .what-row {
+  width: 85%;
+}
+
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+.subtitle-row, .what-row {
+	width: 80%;
+}
+
+
+.subtitle-desc {
+  font-size: 21px;
+}
+
+.section-title {
+	font-size: 28px;
+}
+
+.description {
+	font-size: 18px;
+}
+
+
+
+.cards-title {
+	font-size: 28px;
+}
+
+.card-title {
+	font-size: 21px;
+}
+
+.card-description {
+	font-size: 18px;
+}
+
+ .download-row {
+ 	font-size: 16px;
+ }
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+.subtitle-row, .what-row{
+	width: 80%;
+}
+
+
+.subtitle-desc {
+  font-size: 21px;
+}
+
+
+.section-title {
+	font-size: 28px;
+}
+
+.description {
+	font-size: 18px;
+}
+
+
+.cards-title {
+	font-size: 28px;
+}
+
+.card-title {
+	font-size: 21px;
+}
+
+.card-description {
+	font-size: 18px;
+}
+
+ .download-row {
+ 	font-size: 14px;
+ }
+
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+
+.subtitle-row, .what-row {
+    width: 85%;
+}
+
+
+.subtitle-desc {
+  font-size: 19px;
+}
+
+
+.section-title {
+	font-size: 24px;
+}
+
+.description {
+	font-size: 18px;
+}
+
+
+.cards-title {
+	font-size: 24px;
+}
+
+.card-title {
+	font-size: 21px;
+}
+
+.card-description {
+	font-size: 18px;
+}
+
+ .download-row {
+ 	font-size: 14px;
+ }
+
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+
+.subtitle-row, .what-row{
+    width: 85%;
+}
+
+.subtitle-desc {
+  font-size: 18px;
+}
+
+
+.section-title {
+	font-size: 21px;
+}
+
+.description {
+	font-size: 16px;
+}
+
+.cards-title {
+	font-size: 21px;
+}
+
+.card-title {
+	font-size: 18px;
+}
+
+.card-description {
+	font-size: 16px;
+}
+
+ .download-row {
+ 	font-size: 12px;
+ }
+
+
+}
+

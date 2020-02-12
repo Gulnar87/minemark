@@ -65,6 +65,10 @@
   background-color: #f9f9f9;
 }
 
+.alternated {
+  order: 2;
+}
+
 
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {

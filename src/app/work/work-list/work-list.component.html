@@ -14,9 +14,9 @@
            In this section, you find an overview of our current and future projects
         </p>
     </div>
-    <div class="col-12"  *ngFor="let workEl of works; let i = index;">
+    <div class="col-12"  *ngFor="let workEl of works; let i = index; let o = odd; let e = even;">
       <div class="row">
-        <div class="col-md-6 col-12">
+        <div class="col-md-6 col-12" [ngClass]="{'alternated': o,'even-active': e }">
           <div>
             <img [src]="workEl.picCard" loading="lazy" [alt]="workEl.alt" class="img-fluid card-img">
           </div>
