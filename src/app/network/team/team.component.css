@@ -19,21 +19,30 @@
 
 
 .name {
-   font-size: 28px;
+  font-size: 26px;
+  font-weight: 400;
 	color: #df0113;
 }
 
 .profession {
-	font-size: 24px;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #666;
 }
 
 .bio {
-	font-size: 21px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 
 .columns-team {
 	padding-bottom: 50px;
+}
+
+.columns-team .columns-team__image img{
+  border-radius: 2px;
 }
 
 
@@ -47,12 +56,15 @@
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
- .member-row  {
-	width: 85%;
+  .member-row  {
+    width: 85%;
+  }
+
+  .columns-team .columns-team__image img{
+    width: 90%;
+  }
 }
 
-}
-     
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -79,7 +91,7 @@
 
 .member-row {
 	width: 80%;
-	
+
 }
 
 .columns-team {
@@ -95,7 +107,7 @@
 
 .team-title {
 	font-size: 28px;
-	
+
 }
 
 .team-subtitle {
@@ -135,7 +147,7 @@
 
 .team-title {
 	font-size: 28px;
-	
+
 }
 
 .team-subtitle {
@@ -175,7 +187,7 @@
 
 .team-title {
 	font-size: 24px;
-	
+
 }
 
 .team-subtitle {
@@ -218,7 +230,7 @@
 
 .team-title {
 	font-size: 21px;
-	
+
 }
 
 .team-subtitle {
