@@ -4,6 +4,7 @@
   left: 10%;
 }
 
+
 .text-block h1 {
   background: rgba(223, 1, 19, 0.7);
   font-weight: bold;
@@ -122,6 +123,14 @@
    width: 80%;
 }
 
+.work-img {
+  order: 0;
+}
+
+.work-content {
+  order: 1;
+}
+
 
 .subtitle-work {
 
@@ -155,8 +164,20 @@
   font-size: 22px;
 }
 
+.work-item {
+  display: flex;
+}
+
 .work-list {
    width: 80%;
+}
+
+.work-img {
+  order: 0;
+}
+
+.work-content {
+  order: 1;
 }
 
 
@@ -165,9 +186,12 @@
 
 }
 
-.work-title {
-  font-size: 21px;
+.work-img {
+  order: 0;
+}
 
+.work-content {
+  order: 1;
 }
 
 .work-description {
@@ -201,11 +225,17 @@
    width: 85%;
 }
 
+.work-img {
+  order: 0;
+}
 
- .subtitle-work {
+.work-content {
+  order: 1;
+}
 
+
+.subtitle-work {
   font-size: 19px;
-
 }
 
 .work-title {

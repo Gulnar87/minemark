@@ -15,14 +15,14 @@
         </p>
     </div>
     <div class="col-12"  *ngFor="let workEl of works; let i = index; let o = odd; let e = even;">
-      <div class="row">
-        <div class="col-md-6 col-12" [ngClass]="{'alternated': o,'even-active': e }">
+      <div class="row work-item">
+        <div class="col-md-6 col-12 work-img" [ngClass]="{'alternated': o,'even-active': e }">
           <div>
             <img [src]="workEl.picCard" loading="lazy" [alt]="workEl.alt" class="img-fluid card-img">
           </div>
         </div>
-        <div class="col-md-6 col-12 col-content">
-          <h4 class=" work-title"> {{ workEl.title }}</h4>
+        <div class="col-md-6 col-12 col-content work-content">
+          <h4 class="work-title"> {{ workEl.title }}</h4>
           <div class="less content">
               <p class="work-description" *ngFor="let description of workEl.descriptions"> {{ description.paragraph }} </p>
           </div>
