@@ -6,7 +6,7 @@
 
 .text-block h1 {
 
-  background: rgba(223, 1, 19, 0.7); 
+  background: rgba(223, 1, 19, 0.7);
   font-weight: bold;
   padding: 10px;
   text-transform: uppercase;
@@ -44,8 +44,13 @@
 }
 
 .col-donatetext {
-  display: flex;
-  align-items: center 
+  /* display: flex; */
+  align-items: center
+}
+
+.donate-description {
+  font-size: 17px;
+  opacity: 0.85;
 }
 
 /********** Extra Large devices only **********/
@@ -63,8 +68,10 @@
 .work-list {
    width: 85%;
 }
+
+
 }
-     
+
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
