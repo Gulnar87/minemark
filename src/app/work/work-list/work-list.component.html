@@ -24,7 +24,9 @@
         <div class="col-md-6 col-12 col-content work-content">
           <h4 class="work-title"> {{ workEl.title }}</h4>
           <div class="less content">
-              <p class="work-description" *ngFor="let description of workEl.descriptions"> {{ description.paragraph }} </p>
+            <div class="work-description-short" *ngFor="let description of workEl.descriptions">
+              <p class="work-description"> {{ description.paragraph }} </p>
+            </div>
           </div>
           <div class="pt-3">
             <a [routerLink]="[i]" class="read-more card-link"  role="button" data-toggle="button"  aria-pressed="true">Read more
