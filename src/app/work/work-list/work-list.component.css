@@ -162,9 +162,13 @@
   font-size: 21px;
 
 }
+.work-description-short {
+  max-height: 54px;
+}
 
 .work-description {
   font-size: 18px;
+
 }
 
 .col-content{
@@ -227,7 +231,9 @@
   max-height: 130px;
 }
 
-
+.work-description-short {
+  max-height: 54px;
+}
 
 }
 
@@ -275,6 +281,10 @@
   max-height: 115px;
 }
 
+.work-description-short {
+  max-height: 54px;
+}
+
 
 }
 
@@ -304,7 +314,9 @@
   font-size: 18px;
 
 }
-
+.work-description-short {
+  max-height: 45px;
+}
 .work-description {
   font-size: 16px;
 }
