@@ -24,6 +24,20 @@
   font-size: 21px;
 }
 
+.home-intro-content {
+  margin-top: 2rem;
+  font-size: 17px;
+}
+
+.home-intro-content a {
+  color: #ff3547;
+  transition: all 0.2s;
+}
+
+.home-intro-content a:hover {
+  color: #000;
+}
+
 .hom-col {
   display: flex;
   align-items: center
