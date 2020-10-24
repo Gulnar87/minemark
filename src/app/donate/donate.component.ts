@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
+import createMollieClient from '@mollie/api-client';
 
 declare let paypal: any;
 
@@ -9,14 +10,36 @@ declare let paypal: any;
 })
 export class DonateComponent implements AfterViewChecked{
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    const mollieClient = createMollieClient({ apiKey: 'test_5gMdj9d7fFBVuT6rffM4tEP5CtnW3e' });
+
+    console.log('init', mollieClient);
+
+    mollieClient.payments.create({
+      amount: {
+        value:    '10.00',
+        currency: 'EUR'
+      },
+      description: 'My first API payment',
+      redirectUrl: 'https://yourwebshop.example.org/order/123456',
+      webhookUrl:  'https://yourwebshop.example.org/webhook'
+    })
+      .then(payment => {
+        console.log('payment', payment);
+        // Forward the customer to the payment.getCheckoutUrl()
+      })
+      .catch(error => {
+        // Handle the error
+        console.log('error', error);
+      });
   }
 
   addScript: boolean = false;
   paypalLoad: boolean = true;
-  
+
   finalAmount: number = 1;
 
     paypalConfig = {
@@ -50,11 +73,11 @@ export class DonateComponent implements AfterViewChecked{
       })
     }
   }
-  
+
     addPaypalScript() {
     this.addScript = true;
     return new Promise((resolve, reject) => {
-      let scripttagElement = document.createElement('script');    
+      let scripttagElement = document.createElement('script');
       scripttagElement.src = 'https://www.paypalobjects.com/api/checkout.js';
       scripttagElement.onload = resolve;
       document.body.appendChild(scripttagElement);
