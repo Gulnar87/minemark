@@ -74,7 +74,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:dev-server",
+          "builder": "@angular-builders/custom-webpack:server",
           "options": {
 
             "customWebpackConfig": {
@@ -87,7 +87,7 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "minemark:build:production"
+              "browserTarget": "minemark:build:browser"
             }
           }
         },
