@@ -16,7 +16,50 @@ export class DonateComponent implements AfterViewChecked{
 
   addScript: boolean = false;
   paypalLoad: boolean = true;
-  
+
+  donationAmount: number = 0;
+  text: string = '0';
+  donateButtonText = '';
+  defaultAmount = false;
+  selectedAmount = ''
+
+  onDonate(_amount, _button){
+    this.donationAmount = _amount;
+    this.defaultAmount = true;
+    this.donateButtonText = `€${_amount},- NOW`;
+    this.selectedAmount = _button;
+  }
+
+  onDonateSubmit(){
+    console.log('submit', this.donationAmount);
+    if(this.donationAmount) {
+      switch(this.donationAmount) {
+        case 20:
+          console.log('case 20')
+          window.open('https://useplink.com/payment/ccA6BAngp1AT6kr3pB9U/', '_blank');
+        break;
+        case 40:
+          console.log('case 40')
+        break;
+        case 60:
+          console.log('case 60')
+        break;
+      }
+    }
+    else{
+
+    }
+  }
+
+  onInputChange(_value){
+    this.text = _value;
+    this.defaultAmount = true;
+    console.log(_value);
+    this.donationAmount = _value;
+    this.donateButtonText = `€${_value},- NOW`;
+    this.selectedAmount = '';
+  }
+
   finalAmount: number = 1;
 
     paypalConfig = {
@@ -50,11 +93,11 @@ export class DonateComponent implements AfterViewChecked{
       })
     }
   }
-  
+
     addPaypalScript() {
     this.addScript = true;
     return new Promise((resolve, reject) => {
-      let scripttagElement = document.createElement('script');    
+      let scripttagElement = document.createElement('script');
       scripttagElement.src = 'https://www.paypalobjects.com/api/checkout.js';
       scripttagElement.onload = resolve;
       document.body.appendChild(scripttagElement);
