@@ -34,7 +34,7 @@ export class DonateComponent implements AfterViewChecked{
 
   onDonateSubmit(){
     console.log('submit', this.donationAmount);
-    if(this.donationAmount) {
+    if(this.defaultAmount) {
       switch(this.donationAmount) {
         case 20:
           console.log('case 20')
@@ -48,14 +48,16 @@ export class DonateComponent implements AfterViewChecked{
         break;
       }
     }
-    else{
-
+    else {
+      if(!this.donationAmount || this.donationAmount <= 0){
+        alert('this does not appear to be a valid donation amount');
+      }
     }
   }
 
   onInputChange(_value){
     this.text = _value;
-    this.defaultAmount = true;
+    this.defaultAmount = false;
     this.donationAmount = _value;
     this.donateButtonText = (_value!== null) ? `€${_value},- NOW` : '';
     this.selectedAmount = '';
