@@ -19,8 +19,8 @@ export class DonateComponent implements AfterViewChecked{
   addScript: boolean = false;
   paypalLoad: boolean = true;
 
-  donationAmount: number = 0;
-  text: string = '0';
+  donationAmount: number;
+  text: string = '';
   donateButtonText = '';
   defaultAmount = false;
   selectedAmount = ''
@@ -56,9 +56,8 @@ export class DonateComponent implements AfterViewChecked{
   onInputChange(_value){
     this.text = _value;
     this.defaultAmount = true;
-    console.log(_value);
     this.donationAmount = _value;
-    this.donateButtonText = `€${_value},- NOW`;
+    this.donateButtonText = (_value!== null) ? `€${_value},- NOW` : '';
     this.selectedAmount = '';
   }
 

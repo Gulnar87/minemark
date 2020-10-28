@@ -24,7 +24,7 @@
         <button (click)="onDonate(40, 'amount2')" class="donate-buttons--amount" [ngClass]="{'active': selectedAmount === 'amount2'}">€40,-</button>
         <button (click)="onDonate(60, 'amount3')" class="donate-buttons--amount" [ngClass]="{'active': selectedAmount === 'amount3'}">€60,-</button>
       </span>
-      <input type="number" class="donate-buttons--input" placeholder="or other amount" [ngModel]='text'  (ngModelChange)='onInputChange($event)'>
+      <input type="number" class="donate-buttons--input" placeholder="Or any other amount" [ngModel]='text'  (ngModelChange)='onInputChange($event)'>
       <button (click)="onDonateSubmit()" class="donate-buttons--submit">DONATE {{donateButtonText}}</button>
       <!-- <div class="details">
       <h5 class="subheader">Or use our Bank details</h5>
