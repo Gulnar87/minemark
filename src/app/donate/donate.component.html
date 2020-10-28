@@ -17,13 +17,24 @@
   </div>
 	<div class="col-md-6 col-12">
 		<div class="bank-details">
-			<h2 class="font-weight-bold text-center"> DONATE NOW</h2>
-			<ul class="list-group">
+      <h2 class="font-weight-bold text-center"> DONATE NOW</h2>
+      <p>Please select an amount or use the input field to donate an amount of your choosing.</p>
+      <span class="donate-buttons--wrapper">
+        <button (click)="onDonate(20, 'amount1')" class="donate-buttons--amount" [ngClass]="{'active': selectedAmount === 'amount1'}">€20,-</button>
+        <button (click)="onDonate(40, 'amount2')" class="donate-buttons--amount" [ngClass]="{'active': selectedAmount === 'amount2'}">€40,-</button>
+        <button (click)="onDonate(60, 'amount3')" class="donate-buttons--amount" [ngClass]="{'active': selectedAmount === 'amount3'}">€60,-</button>
+      </span>
+      <input type="number" class="donate-buttons--input" placeholder="or other amount" [ngModel]='text'  (ngModelChange)='onInputChange($event)'>
+      <button (click)="onDonateSubmit()" class="donate-buttons--submit">DONATE {{donateButtonText}}</button>
+      <!-- <div class="details">
+      <h5 class="subheader">Or use our Bank details</h5>
+        <ul class="list-group">
 				<li class="list-group-item mb-3">Name of Bank: ABN AMRO </li>
 				<li class="list-group-item mb-3">Account Holder: MINE MARK STICHTING</li>
 				<li class="list-group-item mb-3">IBAN: NL09 ABNA 0837 0035 04</li>
 				<li class="list-group-item mb-3">Reference: DONATE to EDUCATE</li>
-			</ul>
+      </ul>
+    </div> -->
 		</div>
 	</div>
 </div>

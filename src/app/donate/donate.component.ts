@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
-import createMollieClient from '@mollie/api-client';
+
 
 declare let paypal: any;
 
@@ -14,31 +14,53 @@ export class DonateComponent implements AfterViewChecked{
   }
 
   ngOnInit() {
-    const mollieClient = createMollieClient({ apiKey: 'test_5gMdj9d7fFBVuT6rffM4tEP5CtnW3e' });
-
-    console.log('init', mollieClient);
-
-    mollieClient.payments.create({
-      amount: {
-        value:    '10.00',
-        currency: 'EUR'
-      },
-      description: 'My first API payment',
-      redirectUrl: 'https://yourwebshop.example.org/order/123456',
-      webhookUrl:  'https://yourwebshop.example.org/webhook'
-    })
-      .then(payment => {
-        console.log('payment', payment);
-        // Forward the customer to the payment.getCheckoutUrl()
-      })
-      .catch(error => {
-        // Handle the error
-        console.log('error', error);
-      });
   }
 
   addScript: boolean = false;
   paypalLoad: boolean = true;
+
+  donationAmount: number = 0;
+  text: string = '0';
+  donateButtonText = '';
+  defaultAmount = false;
+  selectedAmount = ''
+
+  onDonate(_amount, _button){
+    this.donationAmount = _amount;
+    this.defaultAmount = true;
+    this.donateButtonText = `€${_amount},- NOW`;
+    this.selectedAmount = _button;
+  }
+
+  onDonateSubmit(){
+    console.log('submit', this.donationAmount);
+    if(this.donationAmount) {
+      switch(this.donationAmount) {
+        case 20:
+          console.log('case 20')
+          window.open('https://useplink.com/payment/ccA6BAngp1AT6kr3pB9U/', '_blank');
+        break;
+        case 40:
+          console.log('case 40')
+        break;
+        case 60:
+          console.log('case 60')
+        break;
+      }
+    }
+    else{
+
+    }
+  }
+
+  onInputChange(_value){
+    this.text = _value;
+    this.defaultAmount = true;
+    console.log(_value);
+    this.donationAmount = _value;
+    this.donateButtonText = `€${_value},- NOW`;
+    this.selectedAmount = '';
+  }
 
   finalAmount: number = 1;
 
