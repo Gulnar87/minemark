@@ -14,22 +14,27 @@ export class DonateComponent implements AfterViewChecked{
   }
 
   ngOnInit() {
+    this.donateButtonText = `€${this.donationAmount},- NOW`;
+    this.donateActivity = this.descriptions[Number(this.selectedAmount)];
   }
 
   addScript: boolean = false;
   paypalLoad: boolean = true;
 
-  donationAmount: number;
+  donationAmount: number = 40;
   text: string = '';
   donateButtonText = '';
-  defaultAmount = false;
-  selectedAmount = ''
+  defaultAmount = true;
+  selectedAmount = '1';
+  descriptions = ['This will help 25 kids to all our materials', 'This buys us one laptop for children to educate themselves', 'This will enable us to continue our work for 2 years!']
+  donateActivity = '';
 
   onDonate(_amount, _button){
     this.donationAmount = _amount;
     this.defaultAmount = true;
     this.donateButtonText = `€${_amount},- NOW`;
     this.selectedAmount = _button;
+    this.donateActivity = this.descriptions[Number(_button)];
   }
 
   onDonateSubmit(){
@@ -38,20 +43,21 @@ export class DonateComponent implements AfterViewChecked{
       switch(this.donationAmount) {
         case 20:
           console.log('case 20')
-          window.open('https://useplink.com/payment/ccA6BAngp1AT6kr3pB9U/', '_blank');
-        break;
-        case 40:
-          console.log('case 40')
-        break;
-        case 60:
-          console.log('case 60')
+          window.open('https://useplink.com/payment/FSBekzAldzDyrkX1WsZi/', '_blank');
+          break;
+          case 40:
+            window.open('https://useplink.com/payment/OAnOn2oQZSm6tpNYk65Y/', '_blank');
+            console.log('case 40')
+            break;
+          case 60:
+            window.open('https://useplink.com/payment/R6QdVudgo7Yyd0XgAmld/', '_blank');
+            console.log('case 60')
         break;
       }
-    }
-    else {
-      if(!this.donationAmount || this.donationAmount <= 0){
-        alert('this does not appear to be a valid donation amount');
-      }
+    } else if (!this.donationAmount || this.donationAmount <= 0) {
+      alert('this does not appear to be a valid donation amount');
+    } else {
+      window.open(`https://useplink.com/payment/RidtebYiHnVWedDLjoYz/EUR${this.donationAmount}`, '_blank');
     }
   }
 
@@ -89,12 +95,13 @@ export class DonateComponent implements AfterViewChecked{
   };
 
  ngAfterViewChecked(): void {
-    if (!this.addScript) {
-      this.addPaypalScript().then(() => {
-        paypal.Button.render(this.paypalConfig, '#paypal-checkout-btn');
-        this.paypalLoad = false;
-      })
-    }
+
+    // if (!this.addScript) {
+    //   this.addPaypalScript().then(() => {
+    //     paypal.Button.render(this.paypalConfig, '#paypal-checkout-btn');
+    //     this.paypalLoad = false;
+    //   })
+    // }
   }
 
     addPaypalScript() {
