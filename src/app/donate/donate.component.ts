@@ -26,7 +26,11 @@ export class DonateComponent implements AfterViewChecked{
   donateButtonText = '';
   defaultAmount = true;
   selectedAmount = '1';
-  descriptions = ['This will help 25 kids to all our materials', 'This buys us one laptop for children to educate themselves', 'This will enable us to continue our work for 2 years!']
+  descriptions = [
+    'Every little bit counts! This amount will help us save one child for a year by providing them with Landmine Risk Eduction.',
+    'Great! This amount will help us save a child and their best friend for a year!',
+    'NICE! This amount will help us save and educate five children for a year!',
+    'WOW!! You are phenomenal! This amount helps to cover the costs of the software package and transport for one laptop.']
   donateActivity = '';
 
   onDonate(_amount, _button){
@@ -34,7 +38,8 @@ export class DonateComponent implements AfterViewChecked{
     this.defaultAmount = true;
     this.donateButtonText = `€${_amount},- NOW`;
     this.selectedAmount = _button;
-    this.donateActivity = this.descriptions[Number(_button)];
+    //this.donateActivity = this.descriptions[Number(_button)];
+    this.updateDonationText(_amount);
   }
 
   onDonateSubmit(){
@@ -67,6 +72,16 @@ export class DonateComponent implements AfterViewChecked{
     this.donationAmount = _value;
     this.donateButtonText = (_value!== null) ? `€${_value},- NOW` : '';
     this.selectedAmount = '';
+    this.updateDonationText(_value);
+  }
+
+  updateDonationText = (_val) => {
+    const val = Number(_val);
+    if(val < 20) this.donateActivity = '';
+    if(val >= 20) this.donateActivity = this.descriptions[0];
+    if(val >= 40) this.donateActivity = this.descriptions[1];
+    if(val >= 60) this.donateActivity = this.descriptions[2];
+    if(val >= 100) this.donateActivity = this.descriptions[3];
   }
 
   finalAmount: number = 1;

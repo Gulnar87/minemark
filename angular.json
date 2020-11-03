@@ -11,12 +11,8 @@
       "schematics": {},
       "architect": {
         "build": {
-          "builder": "@angular-builders/custom-webpack:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "customWebpackConfig": {
-              "path": "./custom-webpack.config.js",
-              "replaceDuplicatePlugins": true
-            },
             "outputPath": "dist/minemark",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -74,20 +70,13 @@
           }
         },
         "serve": {
-          "builder": "@angular-builders/custom-webpack:server",
+          "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-
-            "customWebpackConfig": {
-              "path": "./custom-webpack.config.js",
-              "replaceDuplicatePlugins": true
-            },
-            "main": "src/main.ts",
-            "tsConfig": "src/tsconfig.app.json",
-            "outputPath": "dist/minemark"
+            "browserTarget": "minemark:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "minemark:build:browser"
+              "browserTarget": "minemark:build:production"
             }
           }
         },
