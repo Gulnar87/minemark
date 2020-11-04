@@ -46,15 +46,15 @@ export class DonateComponent implements AfterViewChecked{
     console.log('submit', this.donationAmount);
     if(this.defaultAmount) {
       switch(this.donationAmount) {
-        case 20:
+        case 10:
           console.log('case 10')
           window.open('https://useplink.com/payment/G1HpNOH2BRVr6aMEK72D/', '_blank');
           break;
-          case 40:
+          case 20:
             window.open('https://useplink.com/payment/zIrLlYz5IgHQ7NC7omFK/', '_blank');
             console.log('case 20')
             break;
-          case 60:
+          case 50:
             window.open('https://useplink.com/payment/qqXv2CvKLAP2RwtVCTpZ/', '_blank');
             console.log('case 50')
         break;
