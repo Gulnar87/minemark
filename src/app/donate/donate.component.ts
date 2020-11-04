@@ -81,7 +81,7 @@ export class DonateComponent implements AfterViewChecked{
     if(val >= 10) this.donateActivity = this.descriptions[0];
     if(val >= 20) this.donateActivity = this.descriptions[1];
     if(val >= 50) this.donateActivity = this.descriptions[2];
-    if(val >= 100) this.donateActivity = this.descriptions[3];
+    if(val >= 51) this.donateActivity = this.descriptions[3];
   }
 
   finalAmount: number = 1;
