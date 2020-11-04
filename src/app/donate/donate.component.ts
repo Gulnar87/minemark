@@ -21,7 +21,7 @@ export class DonateComponent implements AfterViewChecked{
   addScript: boolean = false;
   paypalLoad: boolean = true;
 
-  donationAmount: number = 40;
+  donationAmount: number = 20;
   text: string = '';
   donateButtonText = '';
   defaultAmount = true;
@@ -47,16 +47,16 @@ export class DonateComponent implements AfterViewChecked{
     if(this.defaultAmount) {
       switch(this.donationAmount) {
         case 20:
-          console.log('case 20')
-          window.open('https://useplink.com/payment/FSBekzAldzDyrkX1WsZi/', '_blank');
+          console.log('case 10')
+          window.open('https://useplink.com/payment/G1HpNOH2BRVr6aMEK72D/', '_blank');
           break;
           case 40:
-            window.open('https://useplink.com/payment/OAnOn2oQZSm6tpNYk65Y/', '_blank');
-            console.log('case 40')
+            window.open('https://useplink.com/payment/zIrLlYz5IgHQ7NC7omFK/', '_blank');
+            console.log('case 20')
             break;
           case 60:
-            window.open('https://useplink.com/payment/R6QdVudgo7Yyd0XgAmld/', '_blank');
-            console.log('case 60')
+            window.open('https://useplink.com/payment/qqXv2CvKLAP2RwtVCTpZ/', '_blank');
+            console.log('case 50')
         break;
       }
     } else if (!this.donationAmount || this.donationAmount <= 0) {
@@ -77,10 +77,10 @@ export class DonateComponent implements AfterViewChecked{
 
   updateDonationText = (_val) => {
     const val = Number(_val);
-    if(val < 20) this.donateActivity = '';
-    if(val >= 20) this.donateActivity = this.descriptions[0];
-    if(val >= 40) this.donateActivity = this.descriptions[1];
-    if(val >= 60) this.donateActivity = this.descriptions[2];
+    if(val < 10) this.donateActivity = '';
+    if(val >= 10) this.donateActivity = this.descriptions[0];
+    if(val >= 20) this.donateActivity = this.descriptions[1];
+    if(val >= 50) this.donateActivity = this.descriptions[2];
     if(val >= 100) this.donateActivity = this.descriptions[3];
   }
 
