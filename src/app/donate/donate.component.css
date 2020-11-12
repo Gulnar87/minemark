@@ -31,10 +31,71 @@
   font-size: 21px;
 }
 
+.donate-buttons--wrapper {
+  margin-right: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.donate-buttons--amount {
+  transition: all 0.3s;
+  border-left: none;
+  border-top: 1px solid #c1c1c1;
+  border-bottom: 1px solid #c1c1c1;
+  border-right: 1px solid #c1c1c1;
+  padding: 5px 10px 5px;
+  background-color: white;
+  margin: 0;
+}
+
+.donate-buttons--amount:focus {
+  outline: none;
+}
+
+.donate-buttons--amount.active {
+  background: #ff3547;
+  color: #fff;
+  border-color: #ff3547;
+}
+
+.donate-buttons--amount:first-child {
+  border-left: 1px solid #c1c1c1;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.donate-buttons--amount:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.donate-buttons--input {
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.subheader {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  color: #ccc;
+}
+
+.donate-buttons--submit {
+  margin-top: 1rem;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem;
+  display: block;
+  background-color: #ff3547;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  width: 100%;
+}
 
 .bank-details {
   border: 2px solid #eeee;
-  padding: 10px;
+  padding: 1rem;
   background-color: #f9f9f9;
 }
 

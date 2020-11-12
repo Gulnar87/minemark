@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
 
+
 declare let paypal: any;
 
 @Component({
@@ -9,14 +10,80 @@ declare let paypal: any;
 })
 export class DonateComponent implements AfterViewChecked{
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    this.donateButtonText = `€${this.donationAmount},- NOW`;
+    this.donateActivity = this.descriptions[Number(this.selectedAmount)];
   }
 
   addScript: boolean = false;
   paypalLoad: boolean = true;
-  
+
+  donationAmount: number = 20;
+  text: string = '';
+  donateButtonText = '';
+  defaultAmount = true;
+  selectedAmount = '1';
+  descriptions = [
+    'Every little bit counts! This amount will help us save one child for a year by providing them with Landmine Risk Eduction.',
+    'Great! This amount will help us save a child and their best friend for a year!',
+    'NICE! This amount will help us save and educate five children for a year!',
+    'WOW!! You are phenomenal! This amount helps to cover the costs of the software package and transport for one laptop.']
+  donateActivity = '';
+
+  onDonate(_amount, _button){
+    this.donationAmount = _amount;
+    this.defaultAmount = true;
+    this.donateButtonText = `€${_amount},- NOW`;
+    this.selectedAmount = _button;
+    //this.donateActivity = this.descriptions[Number(_button)];
+    this.updateDonationText(_amount);
+  }
+
+  onDonateSubmit(){
+    console.log('submit', this.donationAmount);
+    if(this.defaultAmount) {
+      switch(this.donationAmount) {
+        case 10:
+          console.log('case 10')
+          window.open('https://useplink.com/payment/G1HpNOH2BRVr6aMEK72D/', '_blank');
+          break;
+          case 20:
+            window.open('https://useplink.com/payment/zIrLlYz5IgHQ7NC7omFK/', '_blank');
+            console.log('case 20')
+            break;
+          case 50:
+            window.open('https://useplink.com/payment/qqXv2CvKLAP2RwtVCTpZ/', '_blank');
+            console.log('case 50')
+        break;
+      }
+    } else if (!this.donationAmount || this.donationAmount <= 0) {
+      alert('this does not appear to be a valid donation amount');
+    } else {
+      window.open(`https://useplink.com/payment/RidtebYiHnVWedDLjoYz/EUR${this.donationAmount}`, '_blank');
+    }
+  }
+
+  onInputChange(_value){
+    this.text = _value;
+    this.defaultAmount = false;
+    this.donationAmount = _value;
+    this.donateButtonText = (_value!== null) ? `€${_value},- NOW` : '';
+    this.selectedAmount = '';
+    this.updateDonationText(_value);
+  }
+
+  updateDonationText = (_val) => {
+    const val = Number(_val);
+    if(val < 10) this.donateActivity = '';
+    if(val >= 10) this.donateActivity = this.descriptions[0];
+    if(val >= 20) this.donateActivity = this.descriptions[1];
+    if(val >= 50) this.donateActivity = this.descriptions[2];
+    if(val >= 51) this.donateActivity = this.descriptions[3];
+  }
+
   finalAmount: number = 1;
 
     paypalConfig = {
@@ -43,18 +110,19 @@ export class DonateComponent implements AfterViewChecked{
   };
 
  ngAfterViewChecked(): void {
-    if (!this.addScript) {
-      this.addPaypalScript().then(() => {
-        paypal.Button.render(this.paypalConfig, '#paypal-checkout-btn');
-        this.paypalLoad = false;
-      })
-    }
+
+    // if (!this.addScript) {
+    //   this.addPaypalScript().then(() => {
+    //     paypal.Button.render(this.paypalConfig, '#paypal-checkout-btn');
+    //     this.paypalLoad = false;
+    //   })
+    // }
   }
-  
+
     addPaypalScript() {
     this.addScript = true;
     return new Promise((resolve, reject) => {
-      let scripttagElement = document.createElement('script');    
+      let scripttagElement = document.createElement('script');
       scripttagElement.src = 'https://www.paypalobjects.com/api/checkout.js';
       scripttagElement.onload = resolve;
       document.body.appendChild(scripttagElement);

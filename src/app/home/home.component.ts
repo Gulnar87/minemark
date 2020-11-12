@@ -25,12 +25,12 @@ export class HomeComponent implements OnInit, OnDestroy{
   ngOnInit() {
      this.subscription = this.workService.worksChanged
     .subscribe(
-        (works: Work[]) => { 
+        (works: Work[]) => {
           this.works = works.slice(0, 3);
-         
+
         }
       );
-      
+
       this.works = this.workService.getWorks().slice(0, 3);
 
   }
