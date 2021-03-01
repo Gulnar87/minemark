@@ -17,26 +17,50 @@
 .swiper-slide {
   margin: 0 auto;
 }
-.swiper-button-prev:active,
-.swiper-button-prev:focus,
-.swiper-button-next:active,
-.swiper-button-next:focus {
+.swiper-prev:active,
+.swiper-prev:focus,
+.swiper-next:active,
+.swiper-next:focus {
   outline: 0;
   border: none;
   -moz-outline-style: none;
 }
 
-.swiper-button-prev {
-  position: absolute;
-  left: 120px;
-  top: 70px;
+.swiper-prev, .swiper-next {
+  cursor: pointer;
 }
 
-.swiper-button-next {
+
+.swiper-prev {
+  position: absolute;
+  left: 120px;
+  top: 60px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 44px;
+  z-index: 10;
+}
+
+.swiper-prev.swiper-button-disabled {
+  opacity: 0.6;
+}
+
+.swiper-next {
   position: absolute;
   right: 120px;
-  top: 70px;
+  top: 60px;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 44px;
+  z-index: 10;
 }
+
+.swiper-next.swiper-button-disabled {
+  opacity: 0.6;
+}
+
 
 .flex-center-vertical {
   display: flex;
@@ -49,11 +73,11 @@
 
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .swiper-button-prev {
+  .swiper-button-prev, .testprev {
     left: 50px;
   }
 
-  .swiper-button-next {
+  .swiper-ext{
     right: 50px;
   }
 
@@ -69,11 +93,11 @@
     width: 85%;
   }
 
-  .swiper-button-prev {
+  .swiper-prev {
     left: 40px;
   }
 
-  .swiper-button-next {
+  .swiper-next {
     right: 40px;
   }
 }
@@ -84,11 +108,11 @@
     width: 80%;
   }
 
-  .swiper-button-prev {
+  .swiper-prev {
     left: 50px;
   }
 
-  .swiper-button-next {
+  .swiper-next {
     right: 50px;
   }
 }
@@ -99,11 +123,11 @@
     width: 80%;
   }
 
-  .swiper-button-prev {
+  .swiper-prev, .testprev {
     left: 30px;
   }
 
-  .swiper-button-next {
+  .swiper-next, .testnext {
     right: 30px;
   }
 }
@@ -114,11 +138,11 @@
     width: 85%;
   }
 
-  .swiper-button-prev {
+  .swiper-prev {
     left: 30px;
   }
 
-  .swiper-button-next {
+  .swiper-next {
     right: 30px;
   }
 }
@@ -129,11 +153,11 @@
     width: 85%;
   }
 
-  .swiper-button-prev {
+  .swiper-prev {
     left: 30px;
   }
 
-  .swiper-button-next {
+  .swiper-next {
     right: 30px;
   }
 }

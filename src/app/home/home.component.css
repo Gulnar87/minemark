@@ -300,6 +300,12 @@
 }
 
 }
+@media (min-width: 768px) {
+  .img-exhibition {
+    transform: translateX(10px);
+  }
+}
+
 
 /********** iphone 5  **********/
 @media (min-width: 320px) and (max-width: 379px) {

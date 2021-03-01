@@ -40,6 +40,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   threshold: 50,
   spaceBetween: 5,
   slidesPerView: 1,
+  slidesPerGroup: 1,
   centeredSlides: true,
 };
 
