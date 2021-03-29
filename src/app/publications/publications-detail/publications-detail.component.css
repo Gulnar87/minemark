@@ -1,4 +1,4 @@
-.detail-wrapper {
+:host ::ng-deep .detail-wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,72 +10,72 @@
   overflow: scroll;
 }
 
-.article-wrapper {
+:host ::ng-deep .article-wrapper {
   max-width: 488px;
   margin: 0 auto;
 }
 
-.article-wrapper h1 {
+:host ::ng-deep .article-wrapper h1 {
   font-family: "Times New Roman", Times, serif;
   text-align: left;
   margin-top: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .article-wrapper h1 {
+  :host ::ng-deep .article-wrapper h1 {
     padding: 0 2rem;
   }
 
-  .article-wrapper .intro {
+  :host ::ng-deep .article-wrapper .intro {
     padding: 0 2rem;
   }
 
-  .article-wrapper .outro {
+  :host ::ng-deep .article-wrapper .outro {
     padding: 0 2rem;
   }
-  .article-wrapper .questions-intro {
+  :host ::ng-deep .article-wrapper .questions-intro {
     padding: 0 2rem;
   }
 }
 
-.article-wrapper .image-row {
+:host ::ng-deep .article-wrapper .image-row {
   background: #fff;
   padding: 1rem;
   margin: 2rem 0;
   text-align: center;
 }
 
-.article-wrapper .article-image {
+:host ::ng-deep .article-wrapper .article-image {
   margin: 2rem 0;
   max-width: 488px;
 }
 
-.article-wrapper .intro {
+:host ::ng-deep .article-wrapper .intro {
   font-size: 18px;
   line-height: 1.4em;
   font-style: italic;
 }
 
-.article-wrapper .outro {
+:host ::ng-deep .article-wrapper .outro {
   font-size: 18px;
   font-style: italic;
   line-height: 1.4em;
   text-align: center;
 }
 
-.question-container {
+:host ::ng-deep .question-container {
   background: #ececec;
   padding: 3rem;
   border-bottom: 2px solid #fff;
 }
 
-.question-container h4.question {
+:host ::ng-deep .question-container h4.question {
   font-weight: 400;
   font-size: 17px;
   font-style: italic;
   margin-bottom: 1rem;
 }
 
-.row.subtitle-row {
+:host ::ng-deep .row.subtitle-row {
   opacity: 0;
 }

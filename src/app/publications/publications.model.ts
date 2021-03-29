@@ -1,13 +1,14 @@
 export interface Root {
-  works: Publication[];
+  publications: Publication[];
 }
 
 export interface Publication {
-  id: number;
+  id: string;
+  titleid?: string;
   title: string;
   descriptions?: Descriptions;
-  picTop: string;
-  picCard: string;
+  picTop?: string;
+  picCard?: string;
   pictures?: Pictures;
   body?: string;
 }

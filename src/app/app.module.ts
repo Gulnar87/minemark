@@ -11,6 +11,7 @@ import { NetworkComponent } from "./network/network.component";
 import { TeamComponent } from "./network/team/team.component";
 import { PublicationsComponent } from "./publications/publications.component";
 import { PublicationsDetailComponent } from "./publications/publications-detail/publications-detail.component";
+import { PublicationsHomeComponent } from "./publications/publications-home/publications-home.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { HeaderComponent } from "./core/header/header.component";
@@ -57,6 +58,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     NetworkComponent,
     PublicationsComponent,
     PublicationsDetailComponent,
+    PublicationsHomeComponent,
     TeamComponent,
     HomeComponent,
     SupportersComponent,

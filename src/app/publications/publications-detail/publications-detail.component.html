@@ -5,7 +5,89 @@
      </div>
 </div> -->
 <!-- Jumbotron -->
+<style>
+  .detail-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background: #fff;
+    padding: 100px 0;
+    overflow: scroll;
+  }
 
+  .article-wrapper {
+    max-width: 488px;
+    margin: 0 auto;
+  }
+
+  .article-wrapper h1 {
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .article-wrapper h1 {
+      padding: 0 2rem;
+    }
+
+    .article-wrapper .intro {
+      padding: 0 2rem;
+    }
+
+    .article-wrapper .outro {
+      padding: 0 2rem;
+    }
+    .article-wrapper .questions-intro {
+      padding: 0 2rem;
+    }
+  }
+
+  .article-wrapper .image-row {
+    background: #fff;
+    padding: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .article-wrapper .article-image {
+    margin: 2rem 0;
+    max-width: 488px;
+  }
+
+  .article-wrapper .intro {
+    font-size: 18px;
+    line-height: 1.4em;
+    font-style: italic;
+  }
+
+  .article-wrapper .outro {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.4em;
+    text-align: center;
+  }
+
+  .question-container {
+    background: #ececec;
+    padding: 3rem;
+    border-bottom: 2px solid #fff;
+  }
+
+  .question-container h4.question {
+    font-weight: 400;
+    font-size: 17px;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .row.subtitle-row {
+    opacity: 0;
+  }
+</style>
 <div class="detail-wrapper">
   <div class="row work-detailed-row justify-content-center">
     <div class="col-md-6">
@@ -13,7 +95,7 @@
         <h1 class="work-title text-left font-weight-bold pb-3">
           {{ publication.title }}
         </h1>
-        <div>
+        <div [innerHTML]="publication.body">
           <p class="intro">
             More than a quarter of a century after the war, there are still
             deadly hidden dangers lurking in the fields of Bosnia and

@@ -7,7 +7,8 @@ import { TeamComponent } from "./network/team/team.component";
 import { WorkComponent } from "./work/work.component";
 import { PublicationsComponent } from "./publications/publications.component";
 import { PublicationsDetailComponent } from "./publications/publications-detail/publications-detail.component";
-import { PublicationsResolverService } from "./publications/publications-resolver.service";
+import { PublicationsHomeComponent } from "./publications/publications-home/publications-home.component";
+// import { PublicationsResolverService } from "./publications/publications-resolver.service";
 import { WorkListComponent } from "./work/work-list/work-list.component";
 import { WorkDetailedComponent } from "./work/work-detailed/work-detailed.component";
 import { WorkResolverService } from "./work/work-resolver.service";
@@ -34,7 +35,11 @@ const routes: Routes = [
     component: PublicationsComponent,
     children: [
       {
-        path: ":myid",
+        path: "",
+        component: PublicationsHomeComponent,
+      },
+      {
+        path: ":id",
         component: PublicationsDetailComponent,
       },
     ],

@@ -1,14 +1,15 @@
 export interface Root {
-  publications: Publications[];
+  works: Publication[];
 }
 
-export interface Publications {
+export interface Publication {
   id: number;
   title: string;
-  descriptions: Descriptions;
+  descriptions?: Descriptions;
   picTop: string;
   picCard: string;
-  pictures: Pictures;
+  pictures?: Pictures;
+  body?: string;
 }
 
 export interface Descriptions {
