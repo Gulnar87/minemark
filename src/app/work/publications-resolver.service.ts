@@ -6,13 +6,13 @@ import {
   RouterStateSnapshot,
 } from "@angular/router";
 
-import { Work } from "./work.model";
+import { Publications } from "./publications.model";
 import { DataStorageService } from "../shared/data-storage.service";
 
 @Injectable({
   providedIn: "root",
 })
-export class WorkResolverService implements Resolve<Work[]> {
+export class PublcicationsResolverService implements Resolve<Publications[]> {
   constructor(private dataStorageService: DataStorageService) {}
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {

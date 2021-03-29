@@ -1,31 +1,29 @@
 <div class="row member-row">
-	<div class="col-12 text-center subtitle-row">
-		<h3 class="team-title">Mine Mark Team</h3>
-		<p class="team-subtitle">In this section, you can find more information about the people behind the Mine Mark Project
-		</p>
-	</div>
-	<div class="col-12 columns-team" *ngFor="let member of team; let i = index;">
-		<div class="row">
-			<div class="col-md-4 col-12 columns-team__image">
-				<img [src]="member.pic" class="img-fluid" loading="lazy" [alt]="member.alt" width="700" height="568">
-			</div>
-			<div class="col-md-8 col-12 description columns-team__description">
-				<h4 class="name"> {{ member.name}}</h4>
-				<h6 class="profession"> {{ member.profession }}</h6>
-				<p class="bio"> {{ member.bio}}
-				</p>
-			</div>
-		</div>
-       	<hr class="d-block d-md-none">
-	</div>
+  <div class="col-12 text-center subtitle-row">
+    <h3 class="team-title">Mine Mark Management Team</h3>
+    <p class="team-subtitle">
+      In this section, you can find more information about the people behind the
+      Mine Mark Project
+    </p>
+  </div>
+  <div class="col-12 columns-team" *ngFor="let member of team; let i = index">
+    <div class="row">
+      <div class="col-md-4 col-12 columns-team__image">
+        <img
+          [src]="member.pic"
+          class="img-fluid"
+          loading="lazy"
+          [alt]="member.alt"
+          width="700"
+          height="568"
+        />
+      </div>
+      <div class="col-md-8 col-12 description columns-team__description">
+        <h4 class="name">{{ member.name }}</h4>
+        <h6 class="profession">{{ member.profession }}</h6>
+        <p class="bio">{{ member.bio }}</p>
+      </div>
+    </div>
+    <hr class="d-block d-md-none" />
+  </div>
 </div>
-
-
-
-
-
-
-
-
-
-
