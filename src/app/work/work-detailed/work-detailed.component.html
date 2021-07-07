@@ -7,21 +7,31 @@
 <!-- Jumbotron -->
 
 <div class="row work-detailed-row">
-  	<div class="col-12">
-  		<h2 class="work-title text-center font-weight-bold pb-3"> {{ work.title }}  </h2>
-      <p class="work-description pb-2" *ngFor="let description of work.descriptions">  {{ description.paragraph }} </p>
-     </div>
-     <div class="col-12">
-          <mdb-carousel [animation]="'slide'">
-               <mdb-carousel-item *ngFor="let picture of work.pictures">
-                    <img class="carousel" [src]="picture.carouselPic" [alt]="picture.alt">
-               </mdb-carousel-item> 
-          </mdb-carousel>
-     </div> 
+  <div class="col-12">
+    <h2 class="work-title text-center font-weight-bold pb-3">
+      {{ work.title }}
+    </h2>
+    <p
+      class="work-description pb-2"
+      *ngFor="let description of work.descriptions"
+    >
+      <span [innerHTML]="description.paragraph"></span>
+      {{ description.paragraph }}
+    </p>
+  </div>
+  <div *ngIf="work.video" class="col-12 videoWrapper">
+    <iframe
+      src="https://www.youtube.com/embed/455cK5fryDI"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <div class="col-12" *ngIf="work.pictures">
+    <mdb-carousel [animation]="'slide'">
+      <mdb-carousel-item *ngFor="let picture of work.pictures">
+        <img class="carousel" [src]="picture.carouselPic" [alt]="picture.alt" />
+      </mdb-carousel-item>
+    </mdb-carousel>
+  </div>
 </div>
-
-
-
-
-
-

@@ -25,6 +25,7 @@
         >
           <div>
             <img
+              *ngIf="workEl.picCard"
               [src]="workEl.picCard"
               loading="lazy"
               [alt]="workEl.alt"
@@ -43,12 +44,7 @@
             </div>
           </div>
           <div class="pt-3">
-            <a
-              [routerLink]="[i]"
-              class="read-more card-link"
-              role="button"
-              data-toggle="button"
-              aria-pressed="true"
+            <a [routerLink]="[i]" class="read-more card-link" role="button"
               >Read more
               <span class="faAngleDoubleRight"
                 ><fa-icon [icon]="faAngleDoubleRight"></fa-icon
