@@ -16,7 +16,6 @@
       *ngFor="let description of work.descriptions"
     >
       <span [innerHTML]="description.paragraph"></span>
-      {{ description.paragraph }}
     </p>
   </div>
   <div *ngIf="work.video" class="col-12 videoWrapper">
