@@ -11,7 +11,8 @@ export class WorkService {
   dat = data;
   private works: Work[] = [];
 
-  constructor() {}
+  constructor() {
+  }
 
   getWorks() {
     return this.works.slice();
@@ -23,8 +24,6 @@ export class WorkService {
 
   setWorks(works: Work[]) {
     this.works = this.dat;
-    console.log(works);
-    console.log(this.dat);
     this.worksChanged.next(this.works.slice());
   }
 }

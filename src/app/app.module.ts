@@ -54,6 +54,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     HeaderComponent,
     FooterComponent,
     WhatComponent,
+
     MissionComponent,
     NetworkComponent,
     PublicationsComponent,

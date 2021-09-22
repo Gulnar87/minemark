@@ -18,6 +18,7 @@ export class WorkComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    // console.log('hier');
     // this.dsService.getWorks()
     //   .subscribe(
     //       // (response: Work[]) => {

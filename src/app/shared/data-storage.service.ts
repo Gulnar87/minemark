@@ -6,7 +6,7 @@ import { map, tap, take, exhaustMap } from "rxjs/operators";
 import { environment } from "src/environments/environment";
 
 import { Work } from "../work/work.model";
-
+import { data } from "../work/work-data/work-export.js";
 import { Root, Team, Advisors } from "../network/network.model";
 
 import { WorkService } from "../work/work.service";
@@ -32,25 +32,16 @@ export class DataStorageService {
   // }
 
   getWorks() {
-    return this.http.get<Work[]>(environment.apiUrlWork).pipe(
-      map((works) => {
-        return works.map((work) => {
-          return {
-            ...work,
-            picture: work.pictures ? work.pictures : [],
-          };
-        });
-      }),
-      tap((works) => {
-        works.sort((a: Work, b: Work) => b.id - a.id);
 
-        this.workService.setWorks(works);
-      })
-    );
+    const iets = data.map((work) => {
+      return {
+        ...work,
+        picture: work.pictures ? work.pictures : [],
+      };
+    });
+
+    this.workService.setWorks(iets);
+    return iets;
+
   }
-
-  // getWork(id: string): Observable<Work[]> {
-  //     return this.http.get<Work[]>(`${environment.apiUrlWork}/${id}`);
-
-  // }
 }

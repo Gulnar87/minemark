@@ -10,18 +10,18 @@ export interface Work {
     picCard: string;
     pictures: Pictures;
 
-    
+
 }
 
 export interface Descriptions {
-    
-    paragraph: string;  
+
+    paragraph: string;
 }
 
 
 export interface Pictures{
-    
-    carouselPic: string;  
+
+    carouselPic: string;
     alt: string;
 }
 
