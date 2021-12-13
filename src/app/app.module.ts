@@ -37,6 +37,7 @@ import { WorkDetailedComponent } from "./work/work-detailed/work-detailed.compon
 import { DonateComponent } from "./donate/donate.component";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
+import { WinterAppealComponent } from "./winterappeal/winterappeal.component";
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   observer: true,
@@ -71,6 +72,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     AdvisorsComponent,
     WorkDetailedComponent,
     DonateComponent,
+    WinterAppealComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,7 @@ import { WorkListComponent } from "./work/work-list/work-list.component";
 import { WorkDetailedComponent } from "./work/work-detailed/work-detailed.component";
 import { WorkResolverService } from "./work/work-resolver.service";
 import { DonateComponent } from "./donate/donate.component";
+import { WinterAppealComponent } from "./winterappeal/winterappeal.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -46,6 +47,7 @@ const routes: Routes = [
   },
 
   { path: "donate", component: DonateComponent },
+  { path: "winter-appeal", component: WinterAppealComponent },
   { path: "**", component: PublicationsDetailComponent },
 ];
 
